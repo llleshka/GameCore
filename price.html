@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прайс-лист — GameCore</title>
+
+    <style>
+        body {
+            background-color: #0b0b0f;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1, h2 {
+            color: #9b59ff;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0 50px 0;
+            background-color: #15151c;
+        }
+
+        caption {
+            color: #aaa;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        th {
+            background-color: #6c2bd9;
+            color: white;
+            padding: 12px;
+        }
+
+        td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #444;
+        }
+
+        tr:hover {
+            background-color: #20202a;
+        }
+
+        .price {
+            color: #00bfff;
+            font-weight: bold;
+        }
+
+        .total {
+            background-color: #211538;
+            font-weight: bold;
+        }
+
+        .note {
+            color: #aaa;
+        }
+
+        a {
+            color: #00bfff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>GameCore</h1>
+    <h2>Прайс-лист</h2>
+
+    <!-- ПЕРША ТАБЛИЦЯ -->
+    <table border="1" cellpadding="10" cellspacing="0">
+        <caption>Ціни на готові ігрові комп'ютери</caption>
+
+        <thead>
+            <tr>
+                <th>Назва ПК</th>
+                <th>Процесор</th>
+                <th>Відеокарта</th>
+                <th>Оперативна пам'ять</th>
+                <th>Ціна (грн)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>GameCore Start</td>
+                <td>Intel Core i5</td>
+                <td>RTX 4060</td>
+                <td>16 GB</td>
+                <td class="price">35 000</td>
+            </tr>
+
+            <tr>
+                <td>GameCore Pro</td>
+                <td>Intel Core i5-14400F</td>
+                <td>RTX 4070</td>
+                <td>32 GB</td>
+                <td class="price">55 000</td>
+            </tr>
+
+            <tr>
+                <td>GameCore Ultra</td>
+                <td>AMD Ryzen 7</td>
+                <td>RTX 4070 Ti</td>
+                <td>32 GB</td>
+                <td class="price">68 000</td>
+            </tr>
+
+            <tr>
+                <td>GameCore Extreme</td>
+                <td>Intel Core i9</td>
+                <td>RTX 4090</td>
+                <td>64 GB</td>
+                <td class="price">120 000</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr class="total">
+                <td colspan="4">Середня ціна ігрового ПК:</td>
+                <td>69 500 грн</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <!-- ДРУГА ТАБЛИЦЯ -->
+    <h2>Графік роботи GameCore</h2>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <caption>Графік роботи магазину</caption>
+
+        <thead>
+            <tr>
+                <th>День</th>
+                <th>Години роботи</th>
+                <th>Обідня перерва</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Понеділок</td>
+                <td>09:00 - 19:00</td>
+                <td rowspan="5">13:00 - 14:00</td>
+            </tr>
+
+            <tr>
+                <td>Вівторок</td>
+                <td>09:00 - 19:00</td>
+            </tr>
+
+            <tr>
+                <td>Середа</td>
+                <td>09:00 - 19:00</td>
+            </tr>
+
+            <tr>
+                <td>Четвер</td>
+                <td>09:00 - 19:00</td>
+            </tr>
+
+            <tr>
+                <td>П'ятниця</td>
+                <td>09:00 - 19:00</td>
+            </tr>
+
+            <tr>
+                <td>Субота</td>
+                <td>10:00 - 17:00</td>
+                <td>Без перерви</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3" class="note">
+                    У неділю магазин не працює
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p style="text-align: center;">
+        <a href="index.html">Повернутися на головну сторінку</a>
+    </p>
+
+</body>
+</html>

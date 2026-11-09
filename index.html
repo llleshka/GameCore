@@ -1,0 +1,888 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <!-- Основні налаштування сторінки -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GameCore — Ігрові комп'ютери</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Swiper: стилі слайдера -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Власні стилі сайту -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- ================================================== -->
+    <!-- ШАПКА САЙТУ: логотип, меню та контактний телефон    -->
+    <!-- ================================================== -->
+
+    <header class="main-header" id="top">
+
+        <!-- Логотип та назва магазину -->
+        <div class="header-brand">
+            <a href="index.html">
+                <img
+                    src="img/logo.png"
+                    alt="Логотип магазину GameCore"
+                    width="150"
+                >
+            </a>
+
+            <div class="header-info">
+                <h1>GameCore</h1>
+                <p>
+                    <strong>Твоя гра. Твоя потужність.</strong>
+                </p>
+            </div>
+        </div>
+
+        <!-- Кнопка мобільного меню -->
+        <button class="hamburger" type="button" aria-label="Меню">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <!-- Кнопка відкриття модального вікна (ЛР №15) -->
+        <button
+            type="button"
+            id="open-modal-btn"
+            class="gc-bootstrap-btn btn"
+        >
+            <i class="fa-solid fa-phone"></i>
+            Зв'язатися з нами
+        </button>
+
+        <!-- Мобільне меню -->
+        <nav class="mobile-menu">
+            <a href="index.html">Головна</a>
+            <a href="menu.html">Каталог</a>
+            <a href="#bootstrap-services">Послуги</a>
+            <a href="contacts.html">Контакти</a>
+        </nav>
+
+        <!-- Основна навігація -->
+        <nav class="main-menu">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="#advantages">Наші переваги</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+                <li><a href="menu.html">Каталог</a></li>
+            </ul>
+        </nav>
+
+        <!-- Контактний телефон -->
+        <p class="header-phone">
+            Потрібна допомога?
+            <a href="tel:+380969969696">
+                <strong>+380 (96) 996 96 96</strong>
+            </a>
+        </p>
+
+    </header>
+
+
+    <!-- ================================================== -->
+    <!-- ОСНОВНИЙ ВМІСТ САЙТУ                               -->
+    <!-- ================================================== -->
+
+    <main class="flex-grow-1">
+
+        <!-- Головний банер сайту -->
+        <section class="hero-section">
+            <h2>Готові ігрові ПК для максимальної продуктивності</h2>
+
+            <p>
+                Обирайте готові ігрові комп'ютери
+                для сучасних ігор, роботи та мультимедійних задач.
+            </p>
+
+            <p>
+                <strong>GameCore — Грай на максимумі!</strong>
+            </p>
+
+            <p>
+                <a href="#advantages">Читати про наші переваги</a>
+            </p>
+
+            <div class="scroll-down">
+                <span>↓</span>
+            </div>
+        </section>
+
+
+        <!-- ================================================== -->
+        <!-- ІНФОРМАЦІЯ ПРО МАГАЗИН ТА ЙОГО ПЕРЕВАГИ             -->
+        <!-- ================================================== -->
+
+        <hr>
+
+        <section class="content-section">
+            <h2>Про нас</h2>
+
+            <img
+                src="img/gaming-pc.jpg"
+                alt="Ігровий комп'ютер GameCore"
+                class="float-img"
+                width="500"
+            >
+
+            <p>
+                <strong>GameCore</strong> — магазин готових ігрових
+                комп'ютерів для тих, хто хоче грати на максимумі.
+            </p>
+
+            <p>
+                Ми створюємо та продаємо готові збірки ігрових ПК,
+                підібрані для сучасних ігор, роботи та мультимедійних задач.
+            </p>
+
+            <p>
+                Кожен комп'ютер комплектується
+                <em>збалансованими комплектуючими</em>,
+                щоб забезпечити високу продуктивність,
+                стабільну роботу та комфортний ігровий процес.
+            </p>
+
+            <!-- Переваги магазину -->
+            <h3>Наші переваги:</h3>
+
+            <div class="features-container" id="advantages">
+
+                <div class="feature-card">
+                    <h3>⚡ Швидкість</h3>
+                    <p>Швидка доставка та висока продуктивність комп'ютерів.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🎮 Якість</h3>
+                    <p>Тільки перевірені комплектуючі та надійна техніка.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>💜 Доступні ціни</h3>
+                    <p>Оптимальне співвідношення ціни та продуктивності.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================================================== -->
+        <!-- ЛАБОРАТОРНА РОБОТА №14: BOOTSTRAP 5, FONT AWESOME   -->
+        <!-- ================================================== -->
+
+        <section
+            class="container-fluid gc-bootstrap-section py-5"
+            id="bootstrap-services"
+        >
+            <div class="container">
+
+                <h2 class="text-center mb-2">Наші послуги</h2>
+
+                <p class="text-center gc-bootstrap-subtitle mb-4">
+                    Можливості GameCore для кожного геймера
+                </p>
+
+                <!-- Картки послуг Bootstrap -->
+                <div class="row g-4">
+
+                    <!-- Перша картка -->
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm gc-service-card">
+                            <div class="card-body text-center">
+
+                                <i
+                                    class="fa-solid fa-gamepad fa-3x gc-icon mb-3"
+                                    aria-hidden="true"
+                                ></i>
+
+                                <h5 class="card-title">Ігрові комп'ютери</h5>
+
+                                <p class="card-text">
+                                    Готові збірки для сучасних ігор, роботи та розваг.
+                                </p>
+
+                                <a
+                                    href="menu.html"
+                                    class="btn btn-primary gc-bootstrap-btn"
+                                >
+                                    Переглянути каталог
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Друга картка -->
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm gc-service-card">
+                            <div class="card-body text-center">
+
+                                <i
+                                    class="fa-solid fa-screwdriver-wrench fa-3x gc-icon mb-3"
+                                    aria-hidden="true"
+                                ></i>
+
+                                <h5 class="card-title">Збірка ПК</h5>
+
+                                <p class="card-text">
+                                    Підбір сумісних комплектуючих відповідно до вашого бюджету.
+                                </p>
+
+                                <a
+                                    href="#top"
+                                    class="btn btn-primary gc-bootstrap-btn"
+                                >
+                                    Дізнатися більше
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Третя картка -->
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm gc-service-card">
+                            <div class="card-body text-center">
+
+                                <i
+                                    class="fa-solid fa-headset fa-3x gc-icon mb-3"
+                                    aria-hidden="true"
+                                ></i>
+
+                                <h5 class="card-title">Консультація</h5>
+
+                                <p class="card-text">
+                                    Допоможемо обрати комп'ютер для ваших завдань та улюблених ігор.
+                                </p>
+
+                                <a
+                                    href="contacts.html"
+                                    class="btn btn-primary gc-bootstrap-btn"
+                                >
+                                    Зв'язатися
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Інтерактивна SVG-графіка -->
+                <div class="text-center mt-5" id="svg-demo">
+
+                    <h3 class="mb-3">Інтерактивна SVG-графіка</h3>
+
+                    <p class="gc-bootstrap-subtitle">
+                        Наведіть курсор на емблему, щоб змінити її колір.
+                    </p>
+
+                    <svg
+                        class="gc-svg-icon"
+                        width="100"
+                        height="100"
+                        viewBox="0 0 100 100"
+                        role="img"
+                        aria-label="Інтерактивна кругла SVG-емблема"
+                    >
+                        <circle cx="50" cy="50" r="40" />
+                        <path d="M35 52 L46 63 L67 39" />
+                    </svg>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================================================== -->
+        <!-- ЛАБОРАТОРНА РОБОТА №15: ВКЛАДКИ (ТАБИ)              -->
+        <!-- ================================================== -->
+
+        <section class="gc-tabs-section container my-5">
+
+            <h2 class="text-center mb-4">Інформація про GameCore</h2>
+
+            <!-- Кнопки перемикання вкладок -->
+            <div class="gc-tabs-buttons">
+
+                <button
+                    type="button"
+                    class="gc-tab-btn active"
+                    data-tab="gc-desc"
+                >
+                    Опис
+                </button>
+
+                <button
+                    type="button"
+                    class="gc-tab-btn"
+                    data-tab="gc-chars"
+                >
+                    Характеристики
+                </button>
+
+                <button
+                    type="button"
+                    class="gc-tab-btn"
+                    data-tab="gc-reviews"
+                >
+                    Відгуки
+                </button>
+
+            </div>
+
+            <!-- Вкладка 1: Опис -->
+            <div class="gc-tab-panel active" id="gc-desc">
+                <h3>Про магазин GameCore</h3>
+
+                <p>
+                    GameCore — магазин готових ігрових комп'ютерів.
+                    Ми пропонуємо потужні збірки для сучасних ігор,
+                    роботи та мультимедійних завдань.
+                </p>
+            </div>
+
+            <!-- Вкладка 2: Характеристики -->
+            <div class="gc-tab-panel" id="gc-chars">
+                <h3>Характеристики</h3>
+
+                <ul>
+                    <li>Процесори Intel та AMD.</li>
+                    <li>Відеокарти NVIDIA та AMD.</li>
+                    <li>Оперативна пам'ять DDR4 та DDR5.</li>
+                    <li>Швидкі SSD-накопичувачі.</li>
+                    <li>Індивідуальна збірка комп'ютерів.</li>
+                </ul>
+            </div>
+
+            <!-- Вкладка 3: Відгуки -->
+            <div class="gc-tab-panel" id="gc-reviews">
+                <h3>Відгуки</h3>
+
+                <p>★★★★★ Андрій — Чудовий ігровий ПК!</p>
+                <p>★★★★★ Максим — Якісна збірка та швидка доставка!</p>
+                <p>★★★★★ Олександр — Задоволений покупкою!</p>
+            </div>
+
+        </section>
+
+
+        <!-- ================================================== -->
+        <!-- ГАЛЕРЕЯ ІГРОВИХ КОМП'ЮТЕРІВ                        -->
+        <!-- ================================================== -->
+
+        <section class="gallery-section">
+
+            <h2>Наші роботи</h2>
+
+            <div class="gallery">
+
+                <div class="gallery-item item-1">
+                    <img src="img/pc5.png" alt="Ігровий ПК">
+                </div>
+
+                <div class="gallery-item item-2">
+                    <img src="img/pc6.png" alt="Ігровий ПК">
+                </div>
+
+                <div class="gallery-item item-3">
+                    <img src="img/pc1.png" alt="Ігровий ПК">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================================== -->
+        <!-- СЛАЙДЕР ВІДГУКІВ SWIPER                             -->
+        <!-- ================================================== -->
+
+        <section class="reviews-section">
+
+            <h2>Відгуки наших клієнтів</h2>
+
+            <div class="swiper mySwiper">
+
+                <div class="swiper-wrapper">
+
+                    <!-- Відгук 1 -->
+                    <div class="swiper-slide">
+                        <div class="review-card">
+
+                            <div class="review-stars">★★★★★</div>
+
+                            <h3>Андрій</h3>
+
+                            <p>
+                                Чудовий ігровий ПК! Усі сучасні ігри
+                                працюють швидко та без проблем.
+                            </p>
+
+                            <span>Покупець GameCore</span>
+
+                        </div>
+                    </div>
+
+                    <!-- Відгук 2 -->
+                    <div class="swiper-slide">
+                        <div class="review-card">
+
+                            <div class="review-stars">★★★★★</div>
+
+                            <h3>Максим</h3>
+
+                            <p>
+                                Якісна збірка, швидка доставка
+                                та професійне обслуговування.
+                            </p>
+
+                            <span>Покупець GameCore</span>
+
+                        </div>
+                    </div>
+
+                    <!-- Відгук 3 -->
+                    <div class="swiper-slide">
+                        <div class="review-card">
+
+                            <div class="review-stars">★★★★★</div>
+
+                            <h3>Олександр</h3>
+
+                            <p>
+                                Задоволений покупкою. Комп'ютер
+                                повністю відповідає очікуванням!
+                            </p>
+
+                            <span>Покупець GameCore</span>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Кнопки та індикатори слайдера -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Посилання для повернення нагору -->
+        <p class="text-center my-4">
+            <a href="#top">Вгору</a>
+        </p>
+
+
+        <!-- ================================================== -->
+        <!-- КАТАЛОГ ТОВАРІВ                                    -->
+        <!-- ================================================== -->
+
+        <hr>
+
+        <section class="content-section">
+
+            <h2>Каталог товарів</h2>
+
+            <p>
+                У нашому каталозі представлені збірки
+                різного рівня продуктивності.
+            </p>
+
+            <ol>
+                <li>Доступні ігрові ПК для Full HD</li>
+                <li>Потужні ПК для високих налаштувань графіки</li>
+                <li>Ігрові ПК для високої частоти кадрів</li>
+            </ol>
+
+            <!-- Картки товарів -->
+            <section class="products">
+
+                <!-- Товар 1 -->
+                <div class="product-item">
+
+                    <img src="img/pc1.png" alt="Ігровий ПК GameCore">
+
+                    <h3>GameCore Start</h3>
+
+                    <p>Ігровий комп'ютер для початківців</p>
+
+                    <p>Ціна: 25 000 грн</p>
+
+                    <button type="button">Детальніше</button>
+
+                </div>
+
+                <!-- Товар 2 -->
+                <div class="product-item">
+
+                    <img src="img/pc2.png" alt="Ігровий ПК GameCore Pro">
+
+                    <h3>GameCore Pro</h3>
+
+                    <p>Потужність для сучасних ігор</p>
+
+                    <p>Ціна: 40 000 грн</p>
+
+                    <button type="button">Детальніше</button>
+
+                </div>
+
+                <!-- Товар 3 -->
+                <div class="product-item">
+
+                    <span class="badge">Sale</span>
+
+                    <img src="img/pc3.png" alt="Ігровий ПК GameCore Ultra">
+
+                    <h3>GameCore Ultra</h3>
+
+                    <p>Максимальна продуктивність</p>
+
+                    <p>Ціна: 60 000 грн</p>
+
+                    <button type="button">Детальніше</button>
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <!-- ================================================== -->
+        <!-- ІНДИВІДУАЛЬНА ЗБІРКА ПК                             -->
+        <!-- ================================================== -->
+
+        <hr>
+
+        <section class="content-section">
+
+            <h2>Збірка ПК на замовлення</h2>
+
+            <img
+                src="img/components.jpg"
+                alt="Комплектуючі для ігрового комп'ютера GameCore"
+                width="500"
+            >
+
+            <p>
+                Не знайшли готовий комп'ютер,
+                який повністю відповідає вашим потребам?
+            </p>
+
+            <p>
+                <strong>GameCore</strong> допоможе створити
+                індивідуальну збірку саме для вас.
+            </p>
+
+            <p>
+                Ми підберемо комплектуючі відповідно до вашого
+                бюджету, вимог та улюблених ігор.
+            </p>
+
+            <h3>Ви можете обрати:</h3>
+
+            <ul>
+                <li>Процесор</li>
+                <li>Відеокарту</li>
+                <li>Оперативну пам'ять</li>
+                <li>Накопичувач</li>
+                <li>Інші компоненти</li>
+            </ul>
+
+            <p>
+                Перед збиранням ми допоможемо підібрати сумісні
+                комплектуючі та оптимізувати конфігурацію.
+            </p>
+
+            <p>
+                Для замовлення власної збірки телефонуйте:
+                <br>
+
+                <a href="tel:+380969969696">
+                    <strong>+380 (96) 996 96 96</strong>
+                </a>
+            </p>
+
+        </section>
+
+
+        <!-- ================================================== -->
+        <!-- ДОСТАВКА ТА ОПЛАТА                                 -->
+        <!-- ================================================== -->
+
+        <hr>
+
+        <section class="content-section">
+
+            <h2>GameCore — Твій ПК. Твої правила.</h2>
+
+            <ul>
+                <li>Доставка Новою Поштою</li>
+                <li>Доставка нашим кур'єром у межах Київської області</li>
+                <li>Самовивіз з магазину</li>
+                <li>Повна оплата або оплата частинами</li>
+                <li>Початок збірки в день замовлення</li>
+            </ul>
+
+            <p>
+                <strong>Грай на максимумі!</strong>
+            </p>
+
+        </section>
+
+
+        <!-- ================================================== -->
+        <!-- ВІДЕОПРОГРАВАЧ                                    -->
+        <!-- ================================================== -->
+
+        <hr>
+
+        <section class="content-section">
+
+            <h2>Відео про складання ПК</h2>
+
+            <video
+                controls
+                width="560"
+                poster="img/gaming-pc.jpg"
+            >
+                <source src="video/pc-build.mp4" type="video/mp4">
+
+                Ваш браузер не підтримує відтворення відео.
+            </video>
+
+            <p>
+                Відео про складання персонального комп'ютера
+                та його комплектуючі.
+            </p>
+
+        </section>
+
+
+        <!-- ================================================== -->
+        <!-- АУДІОПРОГРАВАЧ                                    -->
+        <!-- ================================================== -->
+
+        <hr>
+
+        <section class="content-section">
+
+            <h2>Аудіо</h2>
+
+            <p>Музичний супровід GameCore:</p>
+
+            <audio controls>
+                <source src="audio/gaming.mp3" type="audio/mpeg">
+
+                Ваш браузер не підтримує відтворення аудіо.
+            </audio>
+
+        </section>
+
+
+        <!-- ================================================== -->
+        <!-- КОНТАКТНА ІНФОРМАЦІЯ                               -->
+        <!-- ================================================== -->
+
+        <hr>
+
+        <section class="content-section">
+
+            <h2>Контакти</h2>
+
+            <p>
+                Хочете придбати готовий ігровий ПК
+                або замовити індивідуальну збірку?
+                Звертайтеся до <strong>GameCore!</strong>
+            </p>
+
+            <p>
+                <strong>Телефон:</strong>
+                <a href="tel:+380969969696">
+                    +380 (96) 996 96 96
+                </a>
+            </p>
+
+            <p>
+                <strong>E-mail:</strong>
+                <a href="mailto:GameCoreStore@gmail.com">
+                    GameCoreStore@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <strong>Адреса:</strong>
+                <br>
+                м. Київ, Україна
+            </p>
+
+            <p>
+                <strong>Графік роботи:</strong>
+                <br>
+                Вівторок — Субота
+                <br>
+                08:00 — 20:00
+                <br>
+                Неділя — Понеділок: вихідні
+            </p>
+
+            <p>
+                <a href="contacts.html">
+                    Перейти на сторінку контактів
+                </a>
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================================================== -->
+    <!-- ПІДВАЛ САЙТУ: СОЦІАЛЬНІ МЕРЕЖІ ТА КОПІРАЙТ         -->
+    <!-- ================================================== -->
+
+    <footer id="footer" class="site-footer mt-auto">
+
+        <hr>
+
+        <p>
+            © 2026 GameCore.
+            Інтернет-магазин готових ігрових комп'ютерів.
+        </p>
+
+        <p>
+            <strong>GameCore — Грай на максимумі.</strong>
+        </p>
+
+        <p>Ми в соцмережах:</p>
+
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    Instagram
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    Facebook
+                </a>
+            </li>
+        </ul>
+
+        <p>
+            <a href="#top">Вгору</a>
+        </p>
+
+    </footer>
+
+
+    <!-- Кнопка швидкого повернення нагору -->
+    <a
+        href="#top"
+        class="back-to-top"
+        aria-label="Повернутися нагору"
+    >
+        ↑
+    </a>
+
+
+    <!-- ================================================== -->
+    <!-- ЛАБОРАТОРНА РОБОТА №15: МОДАЛЬНЕ ВІКНО              -->
+    <!-- ================================================== -->
+
+    <div class="modal-overlay" id="my-modal">
+
+        <div class="modal-window">
+
+            <!-- Кнопка закриття модального вікна -->
+            <button
+                type="button"
+                class="close-modal"
+                aria-label="Закрити"
+            >
+                &times;
+            </button>
+
+            <h2>Залиште заявку</h2>
+
+            <p>Ми зв'яжемося з вами найближчим часом!</p>
+
+            <!-- Форма зворотного зв'язку -->
+            <form id="callback-form">
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Ваше ім'я"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Ваш телефон"
+                    required
+                >
+
+                <button type="submit" class="btn gc-bootstrap-btn">
+                    Надіслати
+                </button>
+
+            </form>
+
+            <!-- Повідомлення після відправлення форми -->
+            <p id="form-success" class="form-success">
+                Дякуємо! Заявку прийнято.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================================== -->
+    <!-- ПІДКЛЮЧЕННЯ JAVASCRIPT-БІБЛІОТЕК ТА ВЛАСНОГО СКРИПТА -->
+    <!-- ================================================== -->
+
+    <!-- Bootstrap 5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Власний JavaScript: script.js -->
+    <script src="script.js"></script>
+
+</body>
+</html>
